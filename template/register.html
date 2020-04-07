@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+{% block sub_content %}
+<div class="container" style="background-color: rgb(155, 176, 196); font-family: 'Times New Roman', Times, serif;color: rgb(4, 4, 46);">
+<div class="text-center" style="font-family: 'Times New Roman', Times, serif;  ">
+    <h1> New Registration</h1>
+</div>
+<form class="form-horizontal " method="POST" style="font-family: 'Times New Roman', Times, serif; font-size: medium;">
+    <div class="form-group">
+        <label class="control-label col-sm-2">
+            First Name
+        </label>
+        <div class="col-sm-5">
+            <input type="text" name="first_name"/>
+            
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">
+            Last name
+        </label>
+        <div class="col-sm-5">
+            <input type="text" name="last_name"/>
+            
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">
+             Username
+        </label>
+        <div class="col-sm-5">
+            <input type="text" name="username"/>
+            
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">
+            Email
+        </label>
+        <div class="col-sm-5">
+            <input type="email" name="email"/>
+            
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">
+           Password
+        </label>
+        <div class="col-sm-5">
+            <input type="password" name="password"/>
+            
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">
+          Confirm Password
+        </label>
+        <div class="col-sm-5">
+            <input type="password" name="confirm_password"/>
+            
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit">Submit</button>
+       </div>
+    </div>
+    
+</form>
+</div>
+{% endblock %}
+
